@@ -101,6 +101,8 @@ jenkins:
   - all:
       name: "all"
   viewsTabBar: "standard"
+jobs:  
+  - url: https://raw.githubusercontent.com/sinajmon/seedpipe/main/seed.groovy
 globalCredentialsConfiguration:
   configuration:
     providerFilter: "none"
