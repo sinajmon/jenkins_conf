@@ -101,7 +101,16 @@ jenkins:
   - all:
       name: "all"
   viewsTabBar: "standard"
-jobs:  
+jobs:
+  - script: >
+      multibranchPipelineJob('configuration-as-code') {
+          branchSources {
+              git {
+                  id = 'configuration-as-code'
+                  remote('https://github.com/sinajmon/develop.git')
+              }
+          }
+      } 
   - url: https://raw.githubusercontent.com/sinajmon/seedpipe/main/seed.groovy
 globalCredentialsConfiguration:
   configuration:
