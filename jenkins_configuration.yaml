@@ -82,7 +82,7 @@ jenkins:
       users:
       - id: "admin"
         password: "admin@123"
-	name: "admin"
+	    name: "admin"
         properties:
         - "apiToken"
         - "mailer"
