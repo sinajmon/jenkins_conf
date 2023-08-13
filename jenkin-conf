@@ -81,7 +81,6 @@ jenkins:
       enableCaptcha: false
       users:
       - id: "admin"
-	    password: admin@123
         name: "admin"
         properties:
         - "apiToken"
